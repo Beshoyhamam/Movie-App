@@ -1,0 +1,57 @@
+.searchComp .inputSearch {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid rgb(0, 28, 65);
+    outline: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.movies {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 18px;
+}
+
+.movies >div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid rgb(0, 28, 65);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.movies .content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.movies .btn {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.movies .btn button {
+    border: none;
+    outline: none;
+    background-color: rgb(1, 39, 89);
+    color: #FFF;
+    padding: 7px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.movies img {
+    height: 400px;
+    width: 100%;
+}
+
+.movies .btn button:disabled {
+    background-color: rgba(1, 39, 89, 0.422);
+}
